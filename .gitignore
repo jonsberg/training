@@ -1,0 +1,25 @@
+# Node.js dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Private diary data and generated backups
+/data/
+/trainingstagebuch.json
+/context.md
+/training-export*.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Private Docker seed files
+/init/*
+!/init/.gitkeep

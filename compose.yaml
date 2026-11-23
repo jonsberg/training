@@ -1,0 +1,10 @@
+services:
+  training:
+    build: .
+    init: true
+    stdin_open: true
+    environment:
+      TRAINING_SEED: /app/init/seed.json
+    volumes:
+      - ./data:/app/data
+      - ./init:/app/init:ro
